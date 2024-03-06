@@ -1,0 +1,34 @@
+import numpy as np
+
+# Simulate student grades for three subjects (Math, English, Science)
+math_grades = np.array([85, 90, 78, 92, 88])
+english_grades = np.array([75, 80, 92, 88, 78])
+science_grades = np.array([90, 85, 88, 82, 95])
+
+# Combine the grades into a 2D array (rows represent students, columns represent subjects)
+student_grades = np.vstack((math_grades, english_grades, science_grades)).T
+
+# Calculate the average grades for each student
+average_grades = np.mean(student_grades, axis=1)
+
+# Find the student with the highest average grade
+best_student_index = np.argmax(average_grades)
+best_student_name = f"Student {best_student_index + 1}"
+
+# Analyze the performance in each subject
+average_subject_grades = np.mean(student_grades, axis=0)
+
+# Display results
+print("Student Grades:")
+print(student_grades)
+
+print("\nAverage Grades for Each Student:")
+print(average_grades)
+
+print("\nBest Student:")
+print(f"{best_student_name} has the highest average grade of {average_grades[best_student_index]:.2f}.")
+
+print("\nAverage Grades for Each Subject:")
+print("Math:", average_subject_grades[0])
+print("English:", average_subject_grades[1])
+print("Science:", average_subject_grades[2])
