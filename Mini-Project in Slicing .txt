@@ -1,0 +1,42 @@
+Mini Project: Analyzing Sales Data
+Suppose you have sales data for two products (Product A and Product B) over several months. Each row represents a month, and each column represents the sales for a specific product.
+
+import numpy as np
+
+# Sales data for two products over 6 months
+sales_data = np.array([
+    [100, 120, 80, 90, 110],
+    [90, 85, 110, 120, 95],
+    [75, 100, 90, 80, 85],
+    [110, 95, 120, 100, 105],
+    [95, 110, 85, 90, 80],
+    [120, 80, 105, 110, 100]
+])
+
+# Extracting data for Product A and Product B
+product_a_sales = sales_data[:, 0]  # All rows, first column
+product_b_sales = sales_data[:, 1]  # All rows, second column
+
+# Calculating total sales for each product
+total_sales_product_a = np.sum(product_a_sales)
+total_sales_product_b = np.sum(product_b_sales)
+
+# Displaying the results
+print("Sales Data:")
+print(sales_data)
+print("\nProduct A Sales:")
+print(product_a_sales)
+print("\nProduct B Sales:")
+print(product_b_sales)
+print("\nTotal Sales for Product A:", total_sales_product_a)
+print("Total Sales for Product B:", total_sales_product_b)
+
+Explanation:
+
+We create a 2D NumPy array sales_data representing the sales data for two products over six months.
+
+We use array slicing to extract the sales data for each product separately (product_a_sales and product_b_sales).
+
+We calculate the total sales for each product using the np.sum function.
+
+Finally, we display the original sales data, individual product sales, and the total sales for each product.
