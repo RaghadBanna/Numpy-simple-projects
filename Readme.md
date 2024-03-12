@@ -2,7 +2,7 @@
 
 # Finance Tracker: Daily Returns, Moving Averages, and Volatility Analysis
 
-## Overview
+### Overview
 
 This Finance Tracker project is designed to analyze financial data with a focus on Daily Returns, Moving Averages, and Volatility. By utilizing Python and relevant libraries, this tracker provides insights into the performance and trends of selected financial instruments.
 
@@ -24,7 +24,7 @@ This Finance Tracker project is designed to analyze financial data with a focus 
     - Visualize volatility trends over time.
     - Implement Bollinger Bands for volatility assessment.
 
-## Usage
+### Usage
 
 1. **Set Up Your Environment:**
     
@@ -60,16 +60,16 @@ This Finance Tracker project is designed to analyze financial data with a focus 
     - Follow the prompts to input parameters and visualize the analysis.
         
 
-## Project Structure
+### Project Structure
 
 - `Test_file.py`: The main script containing the Finance Tracker functionalities.
 - `data/`: Directory to store financial datasets.
 - `README.md`: Project documentation and usage guide.
 
-## Configuration
+### Configuration
 
 Adjust the project configuration within the script or through user prompts. Customize parameters such as financial instruments, time periods, and moving average lengths.
 
-## Contributing
+### Contributing
 
 Contributions are welcome! If you have suggestions, find issues, or want to add new features, please open an issue or submit a pull request.
