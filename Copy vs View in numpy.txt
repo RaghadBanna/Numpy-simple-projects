@@ -1,49 +1,14 @@
-Mini Project: Copy vs View in NumPy
-
-import numpy as np
-
-# Creating a 2D NumPy array
-original_array = np.array([[1, 2, 3], [4, 5, 6]])
-
-# Creating a copy of the original array
-copied_array = original_array.copy()
-
-# Creating a view of the original array
-view_array = original_array.view()
-
-# Modifying the original array
-original_array[0, 0] = 99
-
-# Displaying the arrays
-print("Original Array:")
-print(original_array)
-
-print("\nCopied Array:")
-print(copied_array)
-
-print("\nView Array:")
-print(view_array)
-
-
 
 Explanation:
 
 We create a 2D NumPy array original_array.
-
 We create a copy of the original array using the copy() method, resulting in copied_array.
-
 We create a view of the original array using the view() method, resulting in view_array.
-
 We modify the first element of the original array to 99.
-
 We display the original array, copied array, and view array.
 
 Results:
-
 The copied_array is completely independent of the original array. Changes to the original array do not affect the copied array.
-
 The view_array is a view of the original array. Changes to the original array affect the view array.
-
 In the project, notice that modifying the original array does not affect the copied array, but it does affect the view array. Understanding when to use a copy and when to use a view is crucial in preventing unexpected changes to your data.
-
 Feel free to experiment with the code and try additional modifications to better understand the concepts of copy and view in NumPy.
