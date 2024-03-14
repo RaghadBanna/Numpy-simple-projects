@@ -1,4 +1,4 @@
-Simple Expense Tracker
+Simple expense Tracker
 This Python project is a simple expense tracker implemented using loops, Pandas, NumPy, and datetime modules. It allows users to add, view, and delete expenses.
 
 Features
